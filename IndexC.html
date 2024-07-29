@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
     <title>Contact Kaden</title>
-    <div class="container">
-        <li><a href="./index.html">Home Page</a></li>
-        <li><a href="./IndexC.html">Contact Kaden</a></li>
-        <li><a href="./IndexR.html">Resume</a></li>
-    </div>
-    <h1>Contact Kaden</h1>
     <style>
         img{
             float: left;
+            margin-right: 15px;
+            max-width: 100%;
         }
-        head{
-            clear: both;
+        @media (max-width: 445px) {
+            img {
+                float: none;
+                display: block;
+                margin: 0 auto;
+            }
         }
         footer{
             clear: both;
@@ -24,16 +24,29 @@
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+        <div class="container">
+                <li><a href="./index.html">Home Page</a></li>
+                <li><a href="./IndexC.html">Contact Kaden</a></li>
+                <li><a href="./IndexR.html">Resume</a></li>
+        </div>
+        </nav>
+        <h1>Contact Kaden</h1>
+    </header>
         <img src="https://raw.githubusercontent.com/KadenPeace/html-portfolio/main/KP.jpg" alt="Image of Kaden Peace">
     <h3>Email</h3>
         <p>kadenapeace@gmail.com</p>
     <h3>Phone</h3>
         <p>928-750-9234</p>
     <hr>
+    <footer>
+        <small>
+            Kaden Peace
+        </small>
+    </footer>
 </body>
-<footer>
-    <small>
-        Kaden Peace
+</html>
     </small>
 </footer>
 </html>
