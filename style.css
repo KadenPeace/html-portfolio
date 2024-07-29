@@ -1,25 +1,42 @@
 body{
     background-color: navy;
     text-align: center;
+    font-family: serif;
 }
 h1{
-    color:goldenrod
+    color:#433D8B;
+    font-size:xx-large;
+    font-weight: bolder;
+    background-color: goldenrod;
 }
 h2{
-    color:goldenrod
+    color:goldenrod;
 }
 h3{
-    color:goldenrod
+    color:goldenrod;
 }
 p{
-    color:goldenrod
+    color:goldenrod;
 }
 li{
-    color:goldenrod
+    color:goldenrod;
 }
 small{
-    color:goldenrod
+    color:goldenrod;
 }
 hr{
-    border-color:goldenrod
+    border-color:goldenrod;
+}
+a{
+    color: goldenrod;
+}
+img{
+    border: 5px solid goldenrod;
+    margin: 25px;
+}
+.container {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    padding: 10px;
 }
