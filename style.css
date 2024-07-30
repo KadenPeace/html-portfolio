@@ -15,11 +15,13 @@ body {
     text-align: center;
     font-family: "Bebas Neue", serif;
     font-style: normal;
+    background: linear-gradient(to right,dodgerblue, navy);
 }
 
 h1, h2, h3 {
     color: goldenrod;
     padding-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 p, li {
@@ -27,6 +29,7 @@ p, li {
     padding: 5px;
     font-family: "Barlow Condensed", serif;
     font-size: large;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
 }
 
 footer {
@@ -58,7 +61,7 @@ a:hover {
 }
 
 img {
-    border: 5px solid goldenrod;
+    border: 7px solid goldenrod;
     margin: 25px;
 }
 
@@ -83,6 +86,7 @@ img {
     padding: 5px;
     text-align: center;
     font-family: "Bebas Neue", serif;
+    text-shadow: none;
 }
 
 main {
