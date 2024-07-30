@@ -1,47 +1,89 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     background-color: navy;
     text-align: center;
     font-family: "Bebas Neue", serif;
     font-style: normal;
 }
-h1{
-    color:navy;
+
+h1, h2, h3 {
+    color: goldenrod;
+    padding-top: 20px;
+}
+
+p, li {
+    color: goldenrod;
+    padding: 5px;
+    font-family: "Barlow Condensed", serif;
+    font-size: large;
+}
+
+footer {
     background-color: goldenrod;
+    color: navy;
+    margin-top: auto;
+    padding: 10px;
 }
-h2{
-    color:goldenrod;
+
+hr {
+    border-color: goldenrod;
+    margin: 10px;
 }
-h3{
-    color:goldenrod;
+
+a {
+    color: navy;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid navy;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.5s, color 0.5s;
 }
-p{
-    color:goldenrod;
-    font-family: serif;
-}
-li{
-    color:goldenrod;
-    font-family: serif;
-}
-small{
-    color:goldenrod;
-}
-hr{
-    border-color:goldenrod;
-}
-a{
+
+a:hover {
+    background-color: navy;
     color: goldenrod;
 }
-img{
+
+img {
     border: 5px solid goldenrod;
     margin: 25px;
 }
+
 .container {
     display: flex;
-    gap: 1rem;
-    padding: 5px;
-    margin: 0;
-    list-style: none;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+    padding: 10px;
+}
+
+.container ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.container li {
+    margin: 0 1rem;
+    padding: 5px;
     text-align: center;
+    font-family: "Bebas Neue", serif;
+}
+
+main {
+    flex: 1;
 }
