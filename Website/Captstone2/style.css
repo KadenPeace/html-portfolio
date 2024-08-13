@@ -1,0 +1,286 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.bevan-regular {
+    font-family: "Bevan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  .bevan-regular-italic {
+    font-family: "Bevan", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+.kaushan-script-regular {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+body {
+    color: #332F22;
+    margin: 0;
+    text-align: center;
+    font-family: "Bevan", serif;
+    font-style: normal;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+p {
+    line-height: 1.6;
+}
+
+.top-container {
+    background-color: #2E335C;
+    position: relative;
+    padding-top: 1rem;
+    color: white;
+}
+
+.nav-bar {
+    background-color: #2E335C;
+    padding: 20px;
+}
+
+.nav-bar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar nav ul li {
+    margin: 10px 5px;
+}
+
+.nav-bar nav ul li a {
+    background-color: white;
+    border-radius: 2px;
+    font-family: serif;
+    color: #2E335C;
+    font-size: 15px;
+    padding: 5px 50px;
+    text-decoration: none;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.nav-bar nav ul li a:hover {
+    background: #2E335C;
+    color: white;
+    background-image: linear-gradient(to bottom, #2D40B5, #11cdd4);
+}
+
+.middle-container {
+    margin-bottom: 100px;
+    flex: 1;
+}
+
+.hero {
+    background-image: url('');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile img {
+    border-radius: 4px;
+    height: 15rem;
+    border: 5px solid #2E335C;
+    box-shadow: 3px 6px 9px rgba(0, 0, 0, 0.8);
+}
+
+.profile div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+}
+
+.profile div h3 {
+    font-size: 1.5rem;
+}
+
+.profile div h1 {
+    font-family: "Kaushan Script", cursive;
+    font-style: italic;
+    font-size: 5rem
+}
+
+.profile div p {
+    font-size: 1.5rem;
+}
+
+.about-me {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-me-list {
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    justify-items: center;
+}
+
+.about-me-list p {
+    width: 100%;
+    text-align: left;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    width: 65%;
+    margin: 100px auto 0 auto;
+    text-align: left;
+    grid-gap: 3rem;
+}
+
+.resume-page {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.resume {
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    justify-items: center;
+}
+
+.resume ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.resume-education, .resume-work, .resume-skills {
+    text-decoration: none;
+}
+
+.phone p {
+    text-align: center;
+}
+
+.email p {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.btn {
+    background: linear-gradient(to bottom, #27349C, #2E335C);
+    border-radius: 2px;
+    font-family: serif;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background: #2E335C;
+    background-image: linear-gradient(to bottom, #2D40B5, #11cdd4);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.bottom-container {
+    background-color: #2E335C;
+    padding: 50px 0 20px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-family: serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+.copyright {
+    color: white;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+@media (max-width: 1100px) {
+    .about-me-list, .resume {
+        width: 80%;
+    }
+    .nav-bar nav ul {
+        flex-direction: column;
+    }
+    .parent {
+        grid-template-columns: 1fr;
+    }
+    .nav-bar nav ul li a {
+        padding: 10px 200px;
+    }
+    .hero {
+        background-image: url('../images/DTY2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 50px 0;
+        color: white;
+        text-align: center;
+        text-shadow: 
+        1px 1px 0 #000, 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000;
+    }
+    
+    .profile {
+        display: block;
+        unicode-bidi: isolate;
+    }
+    
+    .profile img {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        border-radius: 4px;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-me-list, .resume, .parent {
+        width: 100%;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    .nav-bar nav ul li a {
+        padding: 10px 100px;
+    }
+    .profile img {
+        height: 8rem;
+    }
+}
