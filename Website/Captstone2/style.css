@@ -1,3 +1,9 @@
+* {
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -82,73 +88,6 @@ p {
     flex: 1;
 }
 
-.hero {
-    background-image: url('https://github.com/KadenPeace/html-portfolio/raw/d679961a9fcea42cde9287199a88103529b67d12/Website/images/DTY2.jpg');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    padding: 50px 0;
-    color: white;
-    text-align: center;
-    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.profile img {
-    border-radius: 4px;
-    height: 15rem;
-    border: 5px solid #2E335C;
-    box-shadow: 3px 6px 9px rgba(0, 0, 0, 0.8);
-}
-
-.profile div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-}
-
-.profile div h3 {
-    font-size: 1.5rem;
-}
-
-.profile div h1 {
-    font-family: "Kaushan Script", cursive;
-    font-style: italic;
-    font-size: 5rem
-}
-
-.profile div p {
-    font-size: 1.5rem;
-}
-
-.about-me {
-    text-align: center;
-    margin: 0 auto;
-}
-
-.about-me-list {
-    display: grid;
-    width: 50%;
-    margin: 0 auto;
-    grid-gap: 1rem;
-    justify-items: center;
-}
-
-.about-me-list p {
-    width: 100%;
-    text-align: left;
-}
-
 .parent {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -159,56 +98,8 @@ p {
     grid-gap: 3rem;
 }
 
-.resume-page {
-    text-align: center;
-    margin: 0 auto;
-}
-
-.resume {
-    display: grid;
-    width: 50%;
-    margin: 0 auto;
-    grid-gap: 1rem;
-    justify-items: center;
-}
-
-.resume ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.resume-education, .resume-work, .resume-skills {
-    text-decoration: none;
-}
-
-.phone p {
-    text-align: center;
-}
-
-.email p {
-    text-align: center;
-}
-
 h3 {
     text-align: center;
-}
-
-.btn {
-    background: linear-gradient(to bottom, #27349C, #2E335C);
-    border-radius: 2px;
-    font-family: serif;
-    color: white;
-    font-size: 20px;
-    padding: 10px 20px;
-    text-decoration: none;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn:hover {
-    background: #2E335C;
-    background-image: linear-gradient(to bottom, #2D40B5, #11cdd4);
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 .bottom-container {
@@ -281,6 +172,9 @@ a {
         padding: 10px 100px;
     }
     .profile img {
+        height: 8rem;
+    }
+}
         height: 8rem;
     }
 }
